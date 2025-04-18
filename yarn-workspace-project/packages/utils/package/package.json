@@ -1,0 +1,26 @@
+{
+  "name": "@your-org/utils",
+  "version": "1.0.0",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2"
+  },
+  "files": ["dist"],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/monorepo-yarn-workspace.git",
+    "directory": "Project_ABC/packages/utils"
+  },
+  "keywords": ["utilities", "typescript"]
+}
