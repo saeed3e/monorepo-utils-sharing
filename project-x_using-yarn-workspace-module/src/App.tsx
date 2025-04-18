@@ -4,6 +4,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import IdGenerator from './components/IdGenerator'
+import LodashDemo from './components/LodashDemo'
 import './App.css'
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
       
       <div className="utility-demo">
         <IdGenerator />
+      </div>
+      
+      <div className="utility-demo">
+        <LodashDemo />
       </div>
     </>
   )
